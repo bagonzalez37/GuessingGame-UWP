@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="GuessGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GuessGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="DarkViolet" BorderBrush="Lime" BorderThickness="5" RequestedTheme="Dark">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txtInstructions" Text="Guess a number between 1 and 10" FontSize="22" Foreground="Black" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center" />
+        <TextBox x:Name="txtGuess" Grid.Row="1" Text="Guess Here"  Height="10" Width="141" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="247,0,252,0" Background="Lime" Foreground="Black" BorderBrush="Black" BorderThickness="3" RequestedTheme="Dark" />
+        <Button x:Name="getValue" Grid.Row="1" Content="Check Answer" Height="Auto" Width="Auto" VerticalAlignment="Center" HorizontalAlignment="Center" Click="getValue_Click" Background="Lime" BorderBrush="Black" Foreground="Black" BorderThickness="3" RequestedTheme="Dark"/>
+    </Grid>
+</Page>
